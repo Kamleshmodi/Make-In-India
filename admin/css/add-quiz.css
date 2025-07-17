@@ -1,0 +1,29 @@
+
+body{
+    background-image: url('../image/bg1.jpg');
+    /* background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+image{
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top: 8%;
+    margin-bottom: 3%;
+    height: 100vh;
+}
+button{
+    color: rgb(241, 241, 241);
+    background-color: rgb(3, 32, 2);
+}
+input{
+    backdrop-filter: blur(5px);
+}

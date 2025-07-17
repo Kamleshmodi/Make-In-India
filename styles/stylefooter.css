@@ -1,0 +1,75 @@
+footer {
+    font-family: 'Rubik', sans-serif;
+}
+
+.footer-top {
+    background-color: #343a40;
+}
+
+.footer-top h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-top p {
+    color: #bbb;
+}
+
+.footer-top ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-top ul li {
+    margin-bottom: 10px;
+}
+
+.footer-top ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.footer-top ul li a:hover {
+    color: #58a369;
+}
+
+.social-links a {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #58a369;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #bbb;
+}
+
+.footer-bottom a {
+    color: #58a369;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Links Hover Effect */
+.social-links a {
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #58a369; /* Change to your desired hover color */
+    transform: scale(1.2); /* Slightly increase the size on hover */
+}
+
+/* Optional: Add cursor change when hovering over icons */
+.social-links a {
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}

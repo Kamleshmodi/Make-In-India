@@ -1,0 +1,32 @@
+/* Style for the sidebar links */
+.side-nav ul li a {
+    display: flex;
+    align-items: center;
+    color: black;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Hover effect */
+.side-nav ul li a:hover {
+    background-color: white; /* white color for background on hover */
+    /* color: white; White text on hover */
+    width: 300px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transform: translateY(-5px); /* Slight lifting effect */
+
+}
+
+/* Icon styling with smooth transition */
+.side-nav ul li img {
+    margin-right: 12px;
+    transition: transform 0.4s ease;
+}
+
+/* Rotate icon slightly on hover */
+.side-nav ul li a:hover img {
+    transform: rotate(5deg);
+}

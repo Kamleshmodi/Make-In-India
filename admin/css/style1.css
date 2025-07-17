@@ -1,0 +1,207 @@
+/* General Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Side Navigation */
+.side-nav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: rgb(78, 161, 104);
+    padding: 30px 15px;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s ease-in-out;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.user h2 {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.user-img {
+    width: 40px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.p {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.star-img {
+    width: 20px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+ul li img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.side-nav:hover {
+    width: 300px;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+/* Responsive Navigation Bar */
+.nav-bar {
+    padding: 0 15px;
+    padding-left: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-div {
+    display: flex;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.logo-img{
+    width: 130px;
+    height: 100px;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin-left: 30px;
+}
+
+.nav-bar ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-bar ul li a:hover {
+    color: white;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(84, 136, 84, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Buttons */
+#submit {
+    background-color: rgb(6, 39, 16);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main {
+    background-image: url('../image/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .side-nav {
+        width: 200px;
+    }
+    .nav-bar {
+        padding-left: 220px;
+    }
+
+    .side-nav:hover {
+        width: 250px;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .side-nav {
+        width: 100px;
+    }
+
+    .nav-bar {
+        padding-left: 120px;
+    }
+
+    .side-nav:hover {
+        width: 150px;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main {
+        padding: 20px;
+    }
+}
+h3{
+    color: white;
+}
+a:hover{
+    color: blue;
+    border-radius: 3px;
+}
